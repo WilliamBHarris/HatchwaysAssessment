@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* INPUT FIELDS */
+
+input {
+  margin: 20px 15px;
+  width: 96%;
+  height: 6vh;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  font-family: "Raleway", sans-serif, "Courier New", Courier, monospace;
+  font-size: clamp(24px, 5vw, 25px);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.appMain {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+/* END OF INPUT FIELDS */
+
+/* IMAGE BOX */
+
+.imageBox {
+  width: 25%;
+  height: 30vh;
+  display: grid;
+  position: relative;
+  margin-left: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.imageBox img {
+  border: 1px solid darkgray;
+  border-radius: 50%;
+  min-width: 60%;
+  min-height: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+/* END OF IMAGE BOX */
+
+/* INFORMATION BOX */
+
+.infoBox {
+  width: 100%;
+  margin-left: 5px;
+  position: relative;
+}
+
+.expandSign {
+  position: absolute;
+  right: 2%;
+  top: 5%;
+  cursor: pointer;
+  color: darkgray;
+}
+
+.infoBox h3 {
+  font-family: "Raleway", sans-serif, "Courier New", Courier, monospace;
+  font-size: clamp(20px, 5vw, 50px);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.infoBox ul {
+  list-style: none;
+  margin: 20px 0 0 20px;
+}
+
+.infoBox li {
+  font-size: clamp(12px, 1.1vw, 1.7em);
+  padding: 5px;
+  font-family: "Raleway", sans-serif, "Courier New", Courier, monospace;
+}
+
+/* END OF INFORMATION BOX */
+
+/* EXPANDED VIEW */
+.scores {
+  font-size: clamp(16px, 1.1vw, 1.7em) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 10px;
+}
+
+.moreDetails {
+  margin-bottom: 40px;
+}
+/* END OF EXPANDED VIEW */
+
+/* TAG SECTION */
+
+.tagInput {
+  width: 200px;
+  font-size: 20px;
+}
+
+.tags {
+  margin-left: 20px;
+  font-size: clamp(10px, 1.5vw, 1.7em);
+  font-family: "Raleway", sans-serif, "Courier New", Courier, monospace;
+  background: lightgray;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.tagDiv {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+/* END OF TAG SESSION */
